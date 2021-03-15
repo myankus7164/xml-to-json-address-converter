@@ -8,9 +8,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
-public class XmlFileReaderAndConverter {
+public class XmlJsonFileReaderAndConverter {
 
-    public JSONObject readFile(String fileName) {
+    public JSONObject readXmlAndConvertToJSon(String fileName) {
 
         StringBuilder stringBuilder = new StringBuilder("");
 
@@ -27,5 +27,10 @@ public class XmlFileReaderAndConverter {
 
         return jsondata;
 
+    }
+
+    public String readJsonAndConvertToXml(JSONObject jsonObject) {
+        String xml = XML.toString(jsonObject);
+        return xml;
     }
 }
