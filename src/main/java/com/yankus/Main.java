@@ -1,8 +1,6 @@
 package com.yankus;
 
 import org.json.JSONObject;
-import org.json.XML;
-import org.w3c.dom.Document;
 
 import java.util.HashSet;
 import java.util.Scanner;

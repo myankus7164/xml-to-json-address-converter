@@ -12,6 +12,7 @@
 out/
 /log/*
 /tmp/*
+target/*
 !/log/.keep
 !/tmp/.keep
 tags

@@ -6,7 +6,7 @@ import java.util.HashSet;
 
 public class CustomerSet {
     private JSONObject jsonCustomerList;
-    private HashSet<Customer> customers = new HashSet<>();
+    private HashSet<Customer> customers = new HashSet();
 
     public CustomerSet (JSONObject customerList) {
         this.jsonCustomerList = customerList;
