@@ -41,6 +41,8 @@ public class CustomerSet {
             } else {
                 postalCode = contact.get("PostalCode");
             }
+
+            System.out.println(contact);
             customers.add(new Customer(contact.get("CustomerID"), contact.get("CompanyName"), contact.get("ContactName"),
                     contact.get("ContactTitle"), contact.get("Address"), contact.get("City"), contact.get("Email"),
                     postalCode, contact.get("Country"), contact.get("Phone"), fax));
